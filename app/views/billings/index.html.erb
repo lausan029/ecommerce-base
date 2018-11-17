@@ -1,0 +1,6 @@
+<% @billings.each do |billing| %>
+	<%= billing.amount %>
+	<% billing.orders.each do |order| %>
+		<%= order.product.name %>
+	<% end %>
+<% end %>
